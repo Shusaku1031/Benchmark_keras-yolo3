@@ -6,9 +6,9 @@ from timeit import default_timer as timer
 from yolo import YOLO, detect_video
 from PIL import Image
 
-def detect_img(yolo):
+def detect_img(yolo,round_num,file_name):
     while True:
-        img = input('Input image filename:')
+        img = input('Input image file name:')
         if img == "q":
             break
         try:
@@ -18,7 +18,7 @@ def detect_img(yolo):
             continue
         else:
             result_list = []
-            for i in range(101):
+            for i in range(round_num):
                 start = timer()
                 r_image = yolo.detect_image(image)
                 end = timer()
@@ -30,7 +30,7 @@ def detect_img(yolo):
                 #print(r_image["info"])
                 if i == 0:
                     r_image["image"].show()
-            with open(os.path.join('/home','shusaku','image_result.txt'),'w') as f:
+            with open(os.path.join(os.getcwd(),file_name),'w') as f:
                 for rl in result_list:
                     f.write(rl+'\n')
 
@@ -90,8 +90,8 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        "--frame_path", nargs='?', type=str, default="",
-        help = "Frame save path"
+        "--file_name", nargs='?', type=str, default="",
+        help = "Path of result file"
     )
 
     parser.add_argument(
@@ -108,10 +108,10 @@ if __name__ == '__main__':
         print("Image detection mode")
         if "input" in FLAGS:
             print(" Ignoring remaining command line arguments: " + FLAGS.input + "," + FLAGS.output)
-        detect_img(YOLO(**vars(FLAGS)))
+        detect_img(YOLO(**vars(FLAGS)),FLAGS.round_num,FLAGS.file_name)
     elif "input" in FLAGS:
         print(FLAGS.round_num)
-        detect_video(YOLO(**vars(FLAGS)), FLAGS.input, FLAGS.output, FLAGS.frame_path, FLAGS.round_num)
+        detect_video(YOLO(**vars(FLAGS)), FLAGS.input, FLAGS.output, FLAGS.file_name, FLAGS.round_num)
         print('END')
     else:
         print("Must specify at least video_input_path.  See usage with --help.")

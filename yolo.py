@@ -105,7 +105,7 @@ class YOLO(object):
         return boxes, scores, classes
 
     #検出した時のフレームを保存
-    def detect_image(self, image, video_path, frame_path):
+    def detect_image(self, image, video_path="", file_name=""):
         start = timer()
 
         return_info = {}
@@ -186,7 +186,7 @@ class YOLO(object):
             draw.text(text_origin, label, fill=(0, 0, 0), font=font)
             del draw
 
-        """if(len(out_boxes) != 0 and frame_path != ""):
+        """if(len(out_boxes) != 0 and file_name != ""):
             #print(type(image))
             
             frame_name = video_path.split('/')[-1].split('.')[0] + '_{0:0=8}.jpg'.format(self.frame_count)
@@ -200,7 +200,7 @@ class YOLO(object):
             arr_data = np.array([blue,green,red])
             arr_data = arr_data.transpose()
             tmp_image = Image.fromarray(arr_data)
-            tmp_image.save(os.path.join(frame_path,frame_name),quality=50)
+            tmp_image.save(os.path.join(file_name,frame_name),quality=50)
 
             host = "13.114.150.111"
             port = 44446
@@ -212,7 +212,7 @@ class YOLO(object):
 
                 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 s.connect((host, port))
-                with open(os.path.join(frame_path,frame_name), 'rb') as f:
+                with open(os.path.join(file_name,frame_name), 'rb') as f:
                     binary = f.read()
                 # サーバーにバイナリデータを送る
                 print(frame_name + 'をサーバーに送信')
@@ -246,7 +246,7 @@ class YOLO(object):
     def close_session(self):
         self.sess.close()
 
-def detect_video(yolo, video_path, output_path="",frame_path="",round_num=1):
+def detect_video(yolo, video_path, output_path="",file_name="",round_num=1):
     import cv2
 
     #gamma = 0.85
@@ -293,7 +293,7 @@ def detect_video(yolo, video_path, output_path="",frame_path="",round_num=1):
                 er = 1
             if er == 1:
                 break
-            image = yolo.detect_image(image,str(video_path),frame_path)
+            image = yolo.detect_image(image,str(video_path),file_name)
             result = np.asarray(image['image'])
             curr_time = timer()
             exec_time = curr_time - prev_time
@@ -322,7 +322,7 @@ def detect_video(yolo, video_path, output_path="",frame_path="",round_num=1):
         #    end = timer()
         print("処理時間:{}s".format(calc_time))
 
-    with open(os.path.join('/home','shusaku','video_result_10s.txt'),'w') as f:
+    with open(os.path.join(os.getcwd(),file_name),'w') as f:
         for rl in result_list:
             f.write(rl+'\n')
     
