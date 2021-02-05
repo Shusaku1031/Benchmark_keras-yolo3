@@ -109,9 +109,11 @@ If you want to use original pretrained weights for YOLOv3:
 中身はyolo_video.pyとほぼ同じなので、基本的な使い方は**Usage**を参照してください。  
 benchmark.pyはyolo_video.pyのargumentに`--round_num`と`--file_name`が追加されています。
 
+```
 追加のarguments:  
-  --round_num        認識処理を実行する回数の指定  
-  --file_name        処理時間の測定結果を保存するtxtファイル名の指定  
+  --round_num        認識処理を実行する回数の指定
+  --file_name        処理時間の測定結果を保存するtxtファイル名の指定
+```
 
 *実行コマンド例*
 - 画像ファイル(jpg等)に対してベンチマークを測る場合
