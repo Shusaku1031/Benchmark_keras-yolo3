@@ -2,8 +2,8 @@ import xml.etree.ElementTree as ET
 from os import getcwd
 import sys,os
 sets=[('2007', 'train'), ('2007', 'val'), ('2007', 'test')]
-
-classes = ["item"]
+print(sets)
+classes = ["n02231487"]
 
 if len(sys.argv) > 1:
     classes = sys.argv[1:]
@@ -20,7 +20,9 @@ def convert_annotation(year, image_id, list_file):
     for obj in root.iter('object'):
         difficult = obj.find('difficult').text
         cls = obj.find('name').text
+        print(cls)
         if cls not in classes or int(difficult)==1:
+            print("continue")
             continue
         cls_id = classes.index(cls)
         xmlbox = obj.find('bndbox')
@@ -28,6 +30,7 @@ def convert_annotation(year, image_id, list_file):
              int(float(xmlbox.find('ymin').text)),
              int(float(xmlbox.find('xmax').text)),
              int(float(xmlbox.find('ymax').text)))
+        
         list_file.write(" " + ",".join([str(a) for a in b]) + ',' + str(cls_id))
 
 wd = getcwd()

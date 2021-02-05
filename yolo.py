@@ -5,6 +5,9 @@ Class definition of YOLO_v3 style detection model on image and video
 
 import colorsys
 import os
+import copy
+import socket
+import time
 from timeit import default_timer as timer
 
 import numpy as np
@@ -20,13 +23,13 @@ from keras.utils import multi_gpu_model
 
 class YOLO(object):
     _defaults = {
-        # "model_path": 'model_data/yolo.h5',
-        "model_path": 'logs/000/trained_weights_final.h5',
+        #"model_path": 'model_data/yolo.h5',
+        "model_path" : 'logs/000/trained_weights_final.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/voc_classes.txt',
-        "score" : 0.3,
-        "iou" : 0.45,
-        "model_image_size" : (320, 320),
+        "classes_path": 'model_data/coco_classes.txt',
+        "score" : 0.05,
+        "iou" : 0.5,
+        "model_image_size" : (416, 416),
         "gpu_num" : 1,
     }
 
@@ -44,6 +47,7 @@ class YOLO(object):
         self.anchors = self._get_anchors()
         self.sess = K.get_session()
         self.boxes, self.scores, self.classes = self.generate()
+        self.frame_count = 0
 
     def _get_class(self):
         classes_path = os.path.expanduser(self.classes_path)
@@ -100,8 +104,12 @@ class YOLO(object):
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
 
-    def detect_image(self, image):
+    #検出した時のフレームを保存
+    def detect_image(self, image, video_path, frame_path):
         start = timer()
+
+        return_info = {}
+        return_info["info"] = []
 
         if self.model_image_size != (None, None):
             assert self.model_image_size[0]%32 == 0, 'Multiples of 32 required'
@@ -131,7 +139,11 @@ class YOLO(object):
                     size=np.floor(3e-2 * image.size[1] + 0.5).astype('int32'))
         thickness = (image.size[0] + image.size[1]) // 300
 
+
         for i, c in reversed(list(enumerate(out_classes))):
+
+            detected_info = {}
+
             predicted_class = self.class_names[c]
             box = out_boxes[i]
             score = out_scores[i]
@@ -146,6 +158,17 @@ class YOLO(object):
             bottom = min(image.size[1], np.floor(bottom + 0.5).astype('int32'))
             right = min(image.size[0], np.floor(right + 0.5).astype('int32'))
             print(label, (left, top), (right, bottom))
+
+            detected_info["class"] = predicted_class
+            detected_info["score"] = float(score)
+            detected_info["bbox"] = {
+                "left": int(left),
+                "top": int(top),
+                "right": int(right),
+                "bottom": int(bottom)
+            }
+
+            return_info["info"].append(detected_info)
 
             if top - label_size[1] >= 0:
                 text_origin = np.array([left, top - label_size[1]])
@@ -163,51 +186,144 @@ class YOLO(object):
             draw.text(text_origin, label, fill=(0, 0, 0), font=font)
             del draw
 
+        """if(len(out_boxes) != 0 and frame_path != ""):
+            #print(type(image))
+            
+            frame_name = video_path.split('/')[-1].split('.')[0] + '_{0:0=8}.jpg'.format(self.frame_count)
+            print(frame_name)
+            self.frame_count += 1
+
+            tmp_image = copy.deepcopy(image)
+            sub_image = tmp_image.convert('RGB')
+            arr_data = np.array(sub_image)
+            red, green, blue = arr_data.T
+            arr_data = np.array([blue,green,red])
+            arr_data = arr_data.transpose()
+            tmp_image = Image.fromarray(arr_data)
+            tmp_image.save(os.path.join(frame_path,frame_name),quality=50)
+
+            host = "13.114.150.111"
+            port = 44446
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+            try:
+            # 送信先サーバーに接続
+                s.connect((host, port))
+
+                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                s.connect((host, port))
+                with open(os.path.join(frame_path,frame_name), 'rb') as f:
+                    binary = f.read()
+                # サーバーにバイナリデータを送る
+                print(frame_name + 'をサーバーに送信')
+                filename=frame_name.encode()
+                #filedata=[0] * 100
+                s.sendall(filename)
+                time.sleep(0.005)
+                s.sendall("d8a01d50a038,0hqhf0j==fak;=0fq".encode())
+                time.sleep(0.005)
+                s.sendall(binary)
+                # データ送信完了後、送信路を閉じる
+                s.shutdown(1)
+
+            except Exception as e:
+                # 例外が発生した場合、内容を表示
+                print(e)
+
+            finally:
+                # ソケットを閉じて終了
+                s.close() """
+            
+
         end = timer()
         print(end - start)
-        return image
+
+        return_info["image"] = image
+
+        #return image
+        return return_info
 
     def close_session(self):
         self.sess.close()
 
-def detect_video(yolo, video_path, output_path=""):
+def detect_video(yolo, video_path, output_path="",frame_path="",round_num=1):
     import cv2
-    vid = cv2.VideoCapture(video_path)
-    if not vid.isOpened():
-        raise IOError("Couldn't open webcam or video")
-    video_FourCC    = int(vid.get(cv2.CAP_PROP_FOURCC))
-    video_fps       = vid.get(cv2.CAP_PROP_FPS)
-    video_size      = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
-                        int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-    isOutput = True if output_path != "" else False
-    if isOutput:
-        print("!!! TYPE:", type(output_path), type(video_FourCC), type(video_fps), type(video_size))
-        out = cv2.VideoWriter(output_path, video_FourCC, video_fps, video_size)
-    accum_time = 0
-    curr_fps = 0
-    fps = "FPS: ??"
-    prev_time = timer()
-    while True:
-        return_value, frame = vid.read()
-        image = Image.fromarray(frame)
-        image = yolo.detect_image(image)
-        result = np.asarray(image)
-        curr_time = timer()
-        exec_time = curr_time - prev_time
-        prev_time = curr_time
-        accum_time = accum_time + exec_time
-        curr_fps = curr_fps + 1
-        if accum_time > 1:
-            accum_time = accum_time - 1
-            fps = "FPS: " + str(curr_fps)
-            curr_fps = 0
-        cv2.putText(result, text=fps, org=(3, 15), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
-                    fontScale=0.50, color=(255, 0, 0), thickness=2)
-        cv2.namedWindow("result", cv2.WINDOW_NORMAL)
-        cv2.imshow("result", result)
-        if isOutput:
-            out.write(result)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-    yolo.close_session()
 
+    #gamma = 0.85
+    #table = np.array([((i / 255.0) ** (1 / gamma)) * 255 for i in np.arange(0, 256)]).astype("uint8")
+
+    try:
+        video_path = int(video_path)
+    except:
+        print("video path:{}".format(video_path))
+
+    result_list = []
+
+    for i in range(round_num):
+        
+        start = timer()
+        print('='*50)
+        print('round : ',i)
+        print('='*50)
+        vid = cv2.VideoCapture(video_path)
+        if not vid.isOpened():
+            raise IOError("Couldn't open webcam or video")
+        video_FourCC    = int(vid.get(cv2.CAP_PROP_FOURCC))
+        video_fps       = vid.get(cv2.CAP_PROP_FPS)
+        video_size      = (int(vid.get(cv2.CAP_PROP_FRAME_WIDTH)),
+                            int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+        isOutput = True if output_path != "" else False
+        if isOutput:
+            print("!!! TYPE:", type(output_path), type(video_FourCC), type(video_fps), type(video_size))
+            out = cv2.VideoWriter(output_path, video_FourCC, video_fps, video_size)
+        accum_time = 0
+        curr_fps = 0
+        fps = "FPS: ??"
+        prev_time = timer()
+        #try:
+        #    start = timer()
+        er = 0
+        while True:
+            return_value, frame = vid.read()
+            #frame = cv2.LUT(frame,table)
+            try:
+                image = Image.fromarray(frame)
+            except Exception as e:
+                print(e)
+                er = 1
+            if er == 1:
+                break
+            image = yolo.detect_image(image,str(video_path),frame_path)
+            result = np.asarray(image['image'])
+            curr_time = timer()
+            exec_time = curr_time - prev_time
+            prev_time = curr_time
+            accum_time = accum_time + exec_time
+            curr_fps = curr_fps + 1
+            if accum_time > 1:
+                accum_time = accum_time - 1
+                fps = "FPS: " + str(curr_fps)
+                curr_fps = 0
+            cv2.putText(result, text=fps, org=(3, 15), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
+                        fontScale=0.50, color=(255, 0, 0), thickness=3)
+            cv2.namedWindow("result", cv2.WINDOW_NORMAL)
+            cv2.imshow("result", result)
+            if isOutput:
+                out.write(result)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                break
+        end = timer()
+        calc_time = end - start
+
+        if i != 0:
+            result = '{},{}'.format(str(i),str(calc_time))
+            result_list.append(result)
+        #except:
+        #    end = timer()
+        print("処理時間:{}s".format(calc_time))
+
+    with open(os.path.join('/home','shusaku','video_result_10s.txt'),'w') as f:
+        for rl in result_list:
+            f.write(rl+'\n')
+    
+    yolo.close_session()

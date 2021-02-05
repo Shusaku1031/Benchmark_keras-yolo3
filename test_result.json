@@ -1,0 +1,1997 @@
+{
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1164.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 118,
+                    "left": 22,
+                    "bottom": 364,
+                    "right": 207
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.07089182734489441,
+                "bbox": {
+                    "left": 60,
+                    "top": 15,
+                    "right": 296,
+                    "bottom": 334
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.24181751906871796,
+                "bbox": {
+                    "left": 115,
+                    "top": 0,
+                    "right": 403,
+                    "bottom": 258
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6467.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 76,
+                    "left": 63,
+                    "bottom": 290,
+                    "right": 235
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.2008630335330963,
+                "bbox": {
+                    "left": 23,
+                    "top": 37,
+                    "right": 315,
+                    "bottom": 309
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1631.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 95,
+                    "left": 77,
+                    "bottom": 372,
+                    "right": 223
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06619283556938171,
+                "bbox": {
+                    "left": 178,
+                    "top": 110,
+                    "right": 359,
+                    "bottom": 236
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.47324761748313904,
+                "bbox": {
+                    "left": 76,
+                    "top": 81,
+                    "right": 416,
+                    "bottom": 273
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8345.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 161,
+                    "left": 104,
+                    "bottom": 274,
+                    "right": 182
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09801077097654343,
+                "bbox": {
+                    "left": 113,
+                    "top": 0,
+                    "right": 405,
+                    "bottom": 196
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.16710078716278076,
+                "bbox": {
+                    "left": 53,
+                    "top": 19,
+                    "right": 304,
+                    "bottom": 328
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4871188700199127,
+                "bbox": {
+                    "left": 140,
+                    "top": 36,
+                    "right": 383,
+                    "bottom": 312
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_13731.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 33,
+                    "left": 64,
+                    "bottom": 415,
+                    "right": 300
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.12310156226158142,
+                "bbox": {
+                    "left": 0,
+                    "top": 30,
+                    "right": 325,
+                    "bottom": 326
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.6801238059997559,
+                "bbox": {
+                    "left": 76,
+                    "top": 5,
+                    "right": 416,
+                    "bottom": 341
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8277.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 89,
+                    "left": 47,
+                    "bottom": 208,
+                    "right": 397
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.13999205827713013,
+                "bbox": {
+                    "left": 92,
+                    "top": 0,
+                    "right": 206,
+                    "bottom": 306
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1564953327178955,
+                "bbox": {
+                    "left": 129,
+                    "top": 107,
+                    "right": 214,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_9146.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 60,
+                    "bottom": 394,
+                    "right": 220
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.07701104134321213,
+                "bbox": {
+                    "left": 18,
+                    "top": 0,
+                    "right": 286,
+                    "bottom": 309
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1485392302274704,
+                "bbox": {
+                    "left": 143,
+                    "top": 54,
+                    "right": 376,
+                    "bottom": 278
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5607249736785889,
+                "bbox": {
+                    "left": 100,
+                    "top": 0,
+                    "right": 416,
+                    "bottom": 306
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_3783.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 115,
+                    "left": 0,
+                    "bottom": 365,
+                    "right": 311
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.14889568090438843,
+                "bbox": {
+                    "left": 115,
+                    "top": 0,
+                    "right": 311,
+                    "bottom": 269
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.14908181130886078,
+                "bbox": {
+                    "left": 141,
+                    "top": 0,
+                    "right": 383,
+                    "bottom": 344
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6184.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 62,
+                    "left": 69,
+                    "bottom": 382,
+                    "right": 258
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.23170971870422363,
+                "bbox": {
+                    "left": 57,
+                    "top": 0,
+                    "right": 313,
+                    "bottom": 352
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.7687995433807373,
+                "bbox": {
+                    "left": 139,
+                    "top": 0,
+                    "right": 385,
+                    "bottom": 370
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_11083.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 3,
+                    "bottom": 365,
+                    "right": 301
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.2706141471862793,
+                "bbox": {
+                    "left": 62,
+                    "top": 0,
+                    "right": 294,
+                    "bottom": 404
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2784208059310913,
+                "bbox": {
+                    "left": 139,
+                    "top": 0,
+                    "right": 382,
+                    "bottom": 350
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_2472.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 76,
+                    "left": 53,
+                    "bottom": 343,
+                    "right": 198
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.08547205477952957,
+                "bbox": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 311,
+                    "bottom": 295
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.10171347856521606,
+                "bbox": {
+                    "left": 112,
+                    "top": 49,
+                    "right": 308,
+                    "bottom": 244
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.513475239276886,
+                "bbox": {
+                    "left": 112,
+                    "top": 5,
+                    "right": 407,
+                    "bottom": 282
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_2455.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 92,
+                    "left": 8,
+                    "bottom": 237,
+                    "right": 384
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09559345245361328,
+                "bbox": {
+                    "left": 33,
+                    "top": 4,
+                    "right": 238,
+                    "bottom": 350
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.18146219849586487,
+                "bbox": {
+                    "left": 16,
+                    "top": 120,
+                    "right": 268,
+                    "bottom": 409
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2054797112941742,
+                "bbox": {
+                    "left": 89,
+                    "top": 133,
+                    "right": 204,
+                    "bottom": 404
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_11820.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 14,
+                    "left": 6,
+                    "bottom": 384,
+                    "right": 265
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.1518917977809906,
+                "bbox": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 301,
+                    "bottom": 408
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.3574797511100769,
+                "bbox": {
+                    "left": 92,
+                    "top": 0,
+                    "right": 380,
+                    "bottom": 364
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_4857.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 1,
+                    "left": 22,
+                    "bottom": 294,
+                    "right": 383
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.080789715051651,
+                "bbox": {
+                    "left": 146,
+                    "top": 139,
+                    "right": 266,
+                    "bottom": 395
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1261020004749298,
+                "bbox": {
+                    "left": 24,
+                    "top": 0,
+                    "right": 313,
+                    "bottom": 346
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.22936315834522247,
+                "bbox": {
+                    "left": 62,
+                    "top": 64,
+                    "right": 284,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_3374.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 12,
+                    "left": 39,
+                    "bottom": 279,
+                    "right": 311
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.19437837600708008,
+                "bbox": {
+                    "left": 58,
+                    "top": 29,
+                    "right": 285,
+                    "bottom": 267
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_429.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 1,
+                    "left": 1,
+                    "bottom": 414,
+                    "right": 311
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.13742856681346893,
+                "bbox": {
+                    "left": 47,
+                    "top": 0,
+                    "right": 307,
+                    "bottom": 370
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.179621160030365,
+                "bbox": {
+                    "left": 162,
+                    "top": 0,
+                    "right": 368,
+                    "bottom": 369
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1350.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 0,
+                    "bottom": 415,
+                    "right": 311
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06699918210506439,
+                "bbox": {
+                    "left": 68,
+                    "top": 0,
+                    "right": 279,
+                    "bottom": 293
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.3066190481185913,
+                "bbox": {
+                    "left": 108,
+                    "top": 0,
+                    "right": 374,
+                    "bottom": 390
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.36180752515792847,
+                "bbox": {
+                    "left": 139,
+                    "top": 87,
+                    "right": 382,
+                    "bottom": 316
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7469.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 62,
+                    "left": 55,
+                    "bottom": 301,
+                    "right": 227
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.22937139868736267,
+                "bbox": {
+                    "left": 43,
+                    "top": 6,
+                    "right": 301,
+                    "bottom": 232
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_9167.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 121,
+                    "left": 39,
+                    "bottom": 275,
+                    "right": 251
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.14739692211151123,
+                "bbox": {
+                    "left": 36,
+                    "top": 0,
+                    "right": 332,
+                    "bottom": 329
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2229684442281723,
+                "bbox": {
+                    "left": 139,
+                    "top": 0,
+                    "right": 383,
+                    "bottom": 300
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_9254.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 164,
+                    "left": 92,
+                    "bottom": 258,
+                    "right": 175
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.05463796481490135,
+                "bbox": {
+                    "left": 98,
+                    "top": 85,
+                    "right": 305,
+                    "bottom": 330
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1334475427865982,
+                "bbox": {
+                    "left": 81,
+                    "top": 52,
+                    "right": 416,
+                    "bottom": 305
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.20453643798828125,
+                "bbox": {
+                    "left": 24,
+                    "top": 28,
+                    "right": 261,
+                    "bottom": 334
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_956.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 1,
+                    "bottom": 186,
+                    "right": 414
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.0624857023358345,
+                "bbox": {
+                    "left": 0,
+                    "top": 90,
+                    "right": 185,
+                    "bottom": 416
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.08999454975128174,
+                "bbox": {
+                    "left": 59,
+                    "top": 0,
+                    "right": 165,
+                    "bottom": 245
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.12386226654052734,
+                "bbox": {
+                    "left": 52,
+                    "top": 124,
+                    "right": 163,
+                    "bottom": 405
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8472.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 156,
+                    "left": 0,
+                    "bottom": 328,
+                    "right": 414
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.055452652275562286,
+                "bbox": {
+                    "left": 167,
+                    "top": 0,
+                    "right": 321,
+                    "bottom": 232
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.10579969733953476,
+                "bbox": {
+                    "left": 148,
+                    "top": 101,
+                    "right": 271,
+                    "bottom": 416
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1421692818403244,
+                "bbox": {
+                    "left": 79,
+                    "top": 0,
+                    "right": 330,
+                    "bottom": 316
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.3489283323287964,
+                "bbox": {
+                    "left": 70,
+                    "top": 90,
+                    "right": 334,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8492.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 62,
+                    "left": 0,
+                    "bottom": 275,
+                    "right": 311
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.10771343111991882,
+                "bbox": {
+                    "left": 64,
+                    "top": 0,
+                    "right": 353,
+                    "bottom": 366
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1049.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 17,
+                    "left": 1,
+                    "bottom": 276,
+                    "right": 415
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06297812610864639,
+                "bbox": {
+                    "left": 60,
+                    "top": 139,
+                    "right": 236,
+                    "bottom": 416
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.07155899703502655,
+                "bbox": {
+                    "left": 102,
+                    "top": 0,
+                    "right": 255,
+                    "bottom": 416
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4087698757648468,
+                "bbox": {
+                    "left": 11,
+                    "top": 44,
+                    "right": 284,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6855.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 79,
+                    "left": 105,
+                    "bottom": 147,
+                    "right": 217
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.08572136610746384,
+                "bbox": {
+                    "left": 90,
+                    "top": 113,
+                    "right": 312,
+                    "bottom": 366
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2654317021369934,
+                "bbox": {
+                    "left": 24,
+                    "top": 71,
+                    "right": 332,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_4726.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 72,
+                    "left": 1,
+                    "bottom": 363,
+                    "right": 220
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.054173652082681656,
+                "bbox": {
+                    "left": 107,
+                    "top": 88,
+                    "right": 314,
+                    "bottom": 259
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4219178855419159,
+                "bbox": {
+                    "left": 108,
+                    "top": 56,
+                    "right": 412,
+                    "bottom": 289
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7272.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 59,
+                    "left": 56,
+                    "bottom": 228,
+                    "right": 415
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06253061443567276,
+                "bbox": {
+                    "left": 38,
+                    "top": 0,
+                    "right": 301,
+                    "bottom": 268
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4291875660419464,
+                "bbox": {
+                    "left": 37,
+                    "top": 61,
+                    "right": 306,
+                    "bottom": 416
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_10827.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 195,
+                    "left": 57,
+                    "bottom": 296,
+                    "right": 166
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.0525536872446537,
+                "bbox": {
+                    "left": 67,
+                    "top": 34,
+                    "right": 293,
+                    "bottom": 315
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.05917971953749657,
+                "bbox": {
+                    "left": 207,
+                    "top": 56,
+                    "right": 269,
+                    "bottom": 166
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.3099612891674042,
+                "bbox": {
+                    "left": 157,
+                    "top": 15,
+                    "right": 375,
+                    "bottom": 328
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_11005.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 121,
+                    "left": 0,
+                    "bottom": 349,
+                    "right": 247
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09331876784563065,
+                "bbox": {
+                    "left": 140,
+                    "top": 22,
+                    "right": 287,
+                    "bottom": 263
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.36457589268684387,
+                "bbox": {
+                    "left": 140,
+                    "top": 0,
+                    "right": 384,
+                    "bottom": 292
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6989.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 5,
+                    "left": 0,
+                    "bottom": 259,
+                    "right": 341
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09484760463237762,
+                "bbox": {
+                    "left": 6,
+                    "top": 59,
+                    "right": 286,
+                    "bottom": 304
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.1411762535572052,
+                "bbox": {
+                    "left": 37,
+                    "top": 114,
+                    "right": 322,
+                    "bottom": 416
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2807614207267761,
+                "bbox": {
+                    "left": 126,
+                    "top": 128,
+                    "right": 398,
+                    "bottom": 409
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7969.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 59,
+                    "left": 69,
+                    "bottom": 278,
+                    "right": 230
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09533315896987915,
+                "bbox": {
+                    "left": 71,
+                    "top": 50,
+                    "right": 283,
+                    "bottom": 289
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.21531817317008972,
+                "bbox": {
+                    "left": 37,
+                    "top": 0,
+                    "right": 322,
+                    "bottom": 337
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.30015119910240173,
+                "bbox": {
+                    "left": 130,
+                    "top": 0,
+                    "right": 389,
+                    "bottom": 309
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_4718.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 134,
+                    "left": 67,
+                    "bottom": 339,
+                    "right": 215
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06876740604639053,
+                "bbox": {
+                    "left": 34,
+                    "top": 0,
+                    "right": 321,
+                    "bottom": 256
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.10201108455657959,
+                "bbox": {
+                    "left": 107,
+                    "top": 69,
+                    "right": 413,
+                    "bottom": 330
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.11172119528055191,
+                "bbox": {
+                    "left": 151,
+                    "top": 34,
+                    "right": 331,
+                    "bottom": 197
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.14560574293136597,
+                "bbox": {
+                    "left": 123,
+                    "top": 0,
+                    "right": 393,
+                    "bottom": 230
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1012.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 55,
+                    "bottom": 383,
+                    "right": 277
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.07407969236373901,
+                "bbox": {
+                    "left": 29,
+                    "top": 66,
+                    "right": 270,
+                    "bottom": 272
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.12238413840532303,
+                "bbox": {
+                    "left": 186,
+                    "top": 54,
+                    "right": 355,
+                    "bottom": 184
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.18587064743041992,
+                "bbox": {
+                    "left": 34,
+                    "top": 0,
+                    "right": 334,
+                    "bottom": 310
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4658690094947815,
+                "bbox": {
+                    "left": 109,
+                    "top": 48,
+                    "right": 410,
+                    "bottom": 244
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_14026.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 119,
+                    "left": 114,
+                    "bottom": 361,
+                    "right": 201
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.052593767642974854,
+                "bbox": {
+                    "left": 59,
+                    "top": 12,
+                    "right": 304,
+                    "bottom": 330
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.6334579586982727,
+                "bbox": {
+                    "left": 112,
+                    "top": 39,
+                    "right": 406,
+                    "bottom": 314
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_10982.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 15,
+                    "left": 0,
+                    "bottom": 238,
+                    "right": 181
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.1559264361858368,
+                "bbox": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 326,
+                    "bottom": 306
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5680761337280273,
+                "bbox": {
+                    "left": 95,
+                    "top": 0,
+                    "right": 416,
+                    "bottom": 316
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7305.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 53,
+                    "left": 132,
+                    "bottom": 385,
+                    "right": 237
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.0716678574681282,
+                "bbox": {
+                    "left": 190,
+                    "top": 99,
+                    "right": 347,
+                    "bottom": 246
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.0756131187081337,
+                "bbox": {
+                    "left": 0,
+                    "top": 38,
+                    "right": 298,
+                    "bottom": 305
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5380743145942688,
+                "bbox": {
+                    "left": 109,
+                    "top": 36,
+                    "right": 410,
+                    "bottom": 304
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_11886.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 166,
+                    "left": 2,
+                    "bottom": 312,
+                    "right": 197
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.05818435177206993,
+                "bbox": {
+                    "left": 30,
+                    "top": 0,
+                    "right": 329,
+                    "bottom": 292
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.20140515267848969,
+                "bbox": {
+                    "left": 146,
+                    "top": 0,
+                    "right": 376,
+                    "bottom": 271
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1858.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 52,
+                    "left": 69,
+                    "bottom": 252,
+                    "right": 224
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.0907411277294159,
+                "bbox": {
+                    "left": 59,
+                    "top": 25,
+                    "right": 341,
+                    "bottom": 271
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.10476583242416382,
+                "bbox": {
+                    "left": 42,
+                    "top": 0,
+                    "right": 253,
+                    "bottom": 328
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.265110582113266,
+                "bbox": {
+                    "left": 37,
+                    "top": 95,
+                    "right": 255,
+                    "bottom": 255
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_4253.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 1,
+                    "left": 39,
+                    "bottom": 395,
+                    "right": 276
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.11356768757104874,
+                "bbox": {
+                    "left": 119,
+                    "top": 0,
+                    "right": 399,
+                    "bottom": 191
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.46311554312705994,
+                "bbox": {
+                    "left": 96,
+                    "top": 0,
+                    "right": 328,
+                    "bottom": 364
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5748676061630249,
+                "bbox": {
+                    "left": 115,
+                    "top": 55,
+                    "right": 405,
+                    "bottom": 297
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7454.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 27,
+                    "left": 2,
+                    "bottom": 413,
+                    "right": 266
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.1207338273525238,
+                "bbox": {
+                    "left": 0,
+                    "top": 0,
+                    "right": 307,
+                    "bottom": 359
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.6547785401344299,
+                "bbox": {
+                    "left": 123,
+                    "top": 53,
+                    "right": 399,
+                    "bottom": 291
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8441.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 19,
+                    "left": 2,
+                    "bottom": 407,
+                    "right": 250
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.05392949655652046,
+                "bbox": {
+                    "left": 0,
+                    "top": 57,
+                    "right": 305,
+                    "bottom": 292
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.17415626347064972,
+                "bbox": {
+                    "left": 119,
+                    "top": 99,
+                    "right": 299,
+                    "bottom": 250
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.35791659355163574,
+                "bbox": {
+                    "left": 65,
+                    "top": 40,
+                    "right": 416,
+                    "bottom": 305
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_1694.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 4,
+                    "left": 22,
+                    "bottom": 411,
+                    "right": 259
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06674686819314957,
+                "bbox": {
+                    "left": 2,
+                    "top": 0,
+                    "right": 279,
+                    "bottom": 248
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.20504434406757355,
+                "bbox": {
+                    "left": 99,
+                    "top": 0,
+                    "right": 416,
+                    "bottom": 282
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_2378.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 138,
+                    "left": 8,
+                    "bottom": 277,
+                    "right": 230
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.07700004428625107,
+                "bbox": {
+                    "left": 144,
+                    "top": 6,
+                    "right": 280,
+                    "bottom": 291
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_4550.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 13,
+                    "left": 122,
+                    "bottom": 351,
+                    "right": 244
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.09101715683937073,
+                "bbox": {
+                    "left": 131,
+                    "top": 0,
+                    "right": 386,
+                    "bottom": 235
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.15826129913330078,
+                "bbox": {
+                    "left": 26,
+                    "top": 0,
+                    "right": 265,
+                    "bottom": 385
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5434292554855347,
+                "bbox": {
+                    "left": 116,
+                    "top": 18,
+                    "right": 402,
+                    "bottom": 327
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_11133.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 79,
+                    "left": 21,
+                    "bottom": 240,
+                    "right": 370
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.0617571622133255,
+                "bbox": {
+                    "left": 7,
+                    "top": 0,
+                    "right": 326,
+                    "bottom": 269
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.07339677959680557,
+                "bbox": {
+                    "left": 98,
+                    "top": 21,
+                    "right": 256,
+                    "bottom": 268
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.17932063341140747,
+                "bbox": {
+                    "left": 97,
+                    "top": 96,
+                    "right": 254,
+                    "bottom": 378
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.4742441475391388,
+                "bbox": {
+                    "left": 40,
+                    "top": 47,
+                    "right": 303,
+                    "bottom": 369
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6375.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 0,
+                    "left": 15,
+                    "bottom": 273,
+                    "right": 353
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.3669668734073639,
+                "bbox": {
+                    "left": 16,
+                    "top": 45,
+                    "right": 267,
+                    "bottom": 370
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_8852.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 51,
+                    "left": 121,
+                    "bottom": 218,
+                    "right": 328
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.07860001176595688,
+                "bbox": {
+                    "left": 65,
+                    "top": 86,
+                    "right": 165,
+                    "bottom": 385
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.16363836824893951,
+                "bbox": {
+                    "left": 22,
+                    "top": 76,
+                    "right": 259,
+                    "bottom": 342
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_2407.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 19,
+                    "left": 115,
+                    "bottom": 361,
+                    "right": 306
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.06104663386940956,
+                "bbox": {
+                    "left": 97,
+                    "top": 72,
+                    "right": 328,
+                    "bottom": 226
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.14217612147331238,
+                "bbox": {
+                    "left": 3,
+                    "top": 31,
+                    "right": 353,
+                    "bottom": 320
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.2392091006040573,
+                "bbox": {
+                    "left": 107,
+                    "top": 61,
+                    "right": 411,
+                    "bottom": 290
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6443.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 204,
+                    "left": 9,
+                    "bottom": 318,
+                    "right": 260
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.05089491978287697,
+                "bbox": {
+                    "left": 165,
+                    "top": 29,
+                    "right": 313,
+                    "bottom": 259
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.17223766446113586,
+                "bbox": {
+                    "left": 111,
+                    "top": 15,
+                    "right": 409,
+                    "bottom": 265
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_6130.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 4,
+                    "left": 6,
+                    "bottom": 411,
+                    "right": 279
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.05042865127325058,
+                "bbox": {
+                    "left": 11,
+                    "top": 0,
+                    "right": 286,
+                    "bottom": 246
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.08499272912740707,
+                "bbox": {
+                    "left": 191,
+                    "top": 17,
+                    "right": 356,
+                    "bottom": 267
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.789167046546936,
+                "bbox": {
+                    "left": 130,
+                    "top": 0,
+                    "right": 397,
+                    "bottom": 314
+                }
+            }
+        ]
+    },
+    "/home/shusaku/keras-yolo3/use_images/n02231487/n02231487_7108.jpg": {
+        "ground truth": [
+            {
+                "class": "n02231487",
+                "bbox": {
+                    "top": 123,
+                    "left": 7,
+                    "bottom": 354,
+                    "right": 294
+                }
+            }
+        ],
+        "prediction": [
+            {
+                "class": "n02231487",
+                "score": 0.12426271289587021,
+                "bbox": {
+                    "left": 16,
+                    "top": 0,
+                    "right": 350,
+                    "bottom": 364
+                }
+            },
+            {
+                "class": "n02231487",
+                "score": 0.5969977378845215,
+                "bbox": {
+                    "left": 145,
+                    "top": 0,
+                    "right": 382,
+                    "bottom": 342
+                }
+            }
+        ]
+    }
+}
