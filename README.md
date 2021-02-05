@@ -105,8 +105,8 @@ If you want to use original pretrained weights for YOLOv3:
 
 # ベンチマークの実行について
 
-ベンチマークを測るソースコードはbenchmark.pyです。  
-中身はyolo_video.pyとほぼ同じなので、基本的な使い方は**Usage**を参照してください。  
+ベンチマークを測るソースコードは[benchmark.py](https://github.com/Shusaku1031/Benchmark_keras-yolo3/blob/master/benchmark.py)です。  
+中身はyolo_video.pyとほぼ同じなので、基本的な使い方は**Usage**を参考にしてください。  
 benchmark.pyはyolo_video.pyのargumentに`--round_num`と`--file_name`が追加されています。
 
 ```
