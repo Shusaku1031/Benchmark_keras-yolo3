@@ -103,15 +103,15 @@ If you want to use original pretrained weights for YOLOv3:
 
 7. For speeding up the training process with frozen layers train_bottleneck.py can be used. It will compute the bottleneck features of the frozen model first and then only trains the last layers. This makes training on CPU possible in a reasonable time. See [this](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html) for more information on bottleneck features.
 
-#ベンチマークの実行について
+# ベンチマークの実行について
 
-ベンチマークを測るソースコードはbenchmark.pyです。
-中身はyolo_video.pyとほぼ同じなので、基本的な使い方は**Usage**を参照してください。
+ベンチマークを測るソースコードはbenchmark.pyです。  
+中身はyolo_video.pyとほぼ同じなので、基本的な使い方は**Usage**を参照してください。  
 benchmark.pyはyolo_video.pyのargumentに`--round_num`と`--file_name`が追加されています。
 
-追加のarguments:
-  --round_num        認識処理を実行する回数の指定
-  --file_name        処理時間の測定結果を保存するtxtファイル名の指定
+追加のarguments:  
+  --round_num        認識処理を実行する回数の指定  
+  --file_name        処理時間の測定結果を保存するtxtファイル名の指定  
 
 *実行コマンド例*
 - 画像ファイル(jpg等)に対してベンチマークを測る場合
