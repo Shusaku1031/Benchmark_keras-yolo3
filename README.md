@@ -128,3 +128,6 @@ python3 benchmark.py --image --model_path モデルファイル名.h5 --round_nu
 ```
 python3 benchmark.py --input 動画ファイル名.mp4 --model_path モデルファイル名.h5 --round_num 認識処理の施行回数 --file_name "保存テキストファイル名"
 ```
+
+**※注意点**  
+ベンチマークの測定処理において、最初の1回目の認識(動画の場合は1回目の全フレームの認識)時間は含みません
